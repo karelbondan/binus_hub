@@ -13,7 +13,7 @@ const Footer = () => {
                 </div>
                 <div className="text-white border-l border-l-white px-10 max-w-sm space-y-2">
                     <p className="text-xl font-bold">About</p>
-                    <p className="text-sm text-white/80">Binus Hub is a website to showcase projects that's been made by BINUS students over the years. </p>
+                    <p className="text-sm text-white/80">Binus Hub is a website to showcase projects that&apos;s been made by BINUS students over the years. </p>
                     <p className="text-sm text-white/80">Made with ❤ by L5AC B2024 International</p>
                 </div>
                 <div className="text-white border-l border-l-white px-10 max-w-sm space-y-2">
