@@ -7,7 +7,7 @@ const Profile = () => {
     return (
         <div className="px-10 py-10 text-white bg-pronhub min-h-[100vh] flex flex-col items-center justify-center space-y-6">
             <div className="min-w-[500px] max-w-[500px] flex items-center justify-center">
-                <Image src={default_profile} className="rounded-full" />
+                <Image alt="" src={default_profile} className="rounded-full" />
             </div>
             <div className="flex flex-col items-center justify-center">
                 <p className="text-2xl font-bold">BOKUNONAWA.DIOBRANDO</p>

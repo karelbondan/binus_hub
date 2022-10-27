@@ -10,7 +10,7 @@ const Project = ({ project_name, score, student_ids, description }) => {
         <div className="">
             <div className="text-white bg-pronhub flex px-14 py-14 space-x-10">
                 <div id="image_project_preview" className="max-w-[500px] min-w-[500px]">
-                    <Image className=" disable_img_drag disable_selection" src={default_img} />
+                    <Image alt="" className=" disable_img_drag disable_selection" src={default_img} />
                 </div>
                 <div className="space-y-2 flex flex-col justify-center">
                     <p className="text-5xl font-bold">{project}</p>
@@ -21,7 +21,7 @@ const Project = ({ project_name, score, student_ids, description }) => {
                             {stdid.map((ids: any) =>
                                 <div className="cursor-pointer">
                                     <Link href={'/profile/' + ids.id}>
-                                        <p>{ids.id === stdid.at(-1).id ? ids.name : ids.name + ','}</p>
+                                        <p key={ids.id}>{ids.id === stdid.at(-1).id ? ids.name : ids.name + ','}</p>
                                     </Link>
                                 </div>
                             )}

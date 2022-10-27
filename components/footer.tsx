@@ -7,7 +7,7 @@ const Footer = () => {
             <div className="items-center justify-center flex space-x-20 ">
                 <div className="items-center justify-center flex flex-col">
                     <div className='max-w-[130px] min-w-[130px] mr-14 disable_selection disable_img_drag'>
-                        <Image src={bh_logo} alt='/' />
+                        <Image src={bh_logo} alt='' />
                     </div>
                     {/* <div className="border-b min-w-full opacity-50"></div> */}
                 </div>

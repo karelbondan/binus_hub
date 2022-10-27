@@ -12,7 +12,7 @@ const Navbar = () => {
                 <div id='tooltip_trigger' className='relative flex justify-center'>
                     <Link href='/'>
                         <button title='' className='max-w-[150px] min-w-[150px] '>
-                            <Image className='disable_img_drag' src={bh_logo} alt="/" />
+                            <Image className='disable_img_drag' src={bh_logo} alt="" />
                         </button>
                     </Link>
                     <div id='tooltip' className='bg-pronhub_light absolute px-2 py-1 rounded-lg top-[50px] drop-shadow-xl whitespace-nowrap'>
@@ -58,7 +58,7 @@ const Navbar = () => {
                             <button className='flex items-center justify-center space-x-2 border-l px-5'>
                                 <p>BOKUNONAWA</p>
                                 <div className='rounded-full w-[35px] h-[35px]'>
-                                    <Image src={default_profile} className='rounded-full' />
+                                    <Image alt='' src={default_profile} className='rounded-full' />
                                 </div>
                             </button>
                         </Link>

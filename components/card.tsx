@@ -13,7 +13,7 @@ const Card = ({ project_id, icon, project_name, submission_date, score, descript
                 <div className="px-10 flex space-x-10 items-center xtra_large:px-[300px]">
                     <Link href={'/project/' + project_id}>
                         <div id="image" className="max-w-[140px] min-w-[140px] cursor-pointer">
-                            <Image className="disable_img_drag" src={icon ? icon : default_img} />
+                            <Image alt="" className="disable_img_drag" src={icon ? icon : default_img} />
                         </div>
                     </Link>
                     <div className="disable_selection">
