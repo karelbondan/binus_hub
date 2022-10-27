@@ -19,9 +19,9 @@ const Project = ({ project_name, score, student_ids, description }) => {
                         <div className="flex space-x-1">
                             <p>By </p>
                             {stdid.map((ids: any) =>
-                                <div className="cursor-pointer">
+                                <div key={ids.id} className="cursor-pointer">
                                     <Link href={'/profile/' + ids.id}>
-                                        <p key={ids.id}>{ids.id === stdid.at(-1).id ? ids.name : ids.name + ','}</p>
+                                        <p>{ids.id === stdid.at(-1).id ? ids.name : ids.name + ','}</p>
                                     </Link>
                                 </div>
                             )}
