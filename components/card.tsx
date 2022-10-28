@@ -8,12 +8,14 @@ const Card = ({ project_id, icon, project_name, submission_date, score, descript
     // console.log(staff_ids.includes(binus_staff))
     // console.log(!binus_staff)
     return (
-        <div className="">
-            <div id='list_component' className="px-10 py-5 space-y-5 border-l-8 border-l-gray-500/0 hover:bg-white/5 hover:border-l-binusmaya/80 transition-colors disable_selection">
-                <div className="px-10 flex space-x-10 items-center xtra_large:px-[300px]">
+        <div className="px-3">
+            {/* <div id='list_component' className="px-10 py-5 space-y-5 border-l-8 border-l-gray-500/0 hover:bg-white/5 hover:border-l-binusmaya/80 transition-colors disable_selection"> */}
+            <div id="list_component" className="rounded-xl bg-pronhub_light py-5 hover:bg-white/[.2] hover:shadow-md hover:shadow-black/30 hover:border-l-binusmaya border-l-[5px] border-transparent disable_selection transition-all">
+                {/* <div className="flex space-x-10 items-center xtra_large:px-[300px]"> */}
+                <div className="flex space-x-10 items-center w-fit px-7">
                     <Link href={'/project/' + project_id}>
-                        <div id="image" className="max-w-[140px] min-w-[140px] cursor-pointer">
-                            <Image alt="" className="disable_img_drag" src={icon ? icon : default_img} />
+                        <div id="image" className="max-w-[160px] min-w-[160px] cursor-pointer">
+                            <img alt="" className="disable_img_drag rounded-xl" src={"https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Sin_foto.svg/450px-Sin_foto.svg.png?20060902150340"} />
                         </div>
                     </Link>
                     <div className="disable_selection">
@@ -25,7 +27,7 @@ const Card = ({ project_id, icon, project_name, submission_date, score, descript
                         <p className="text-sm">By {student_ids.toString()}</p>
                         <p className={`text-sm font-semibold ${binus_staff && staff_ids.includes(binus_staff) ? "" : "hidden"}`}>Score: {score}</p>
                         <br />
-                        <p>
+                        <p className="max-w-lg">
                             {description}
                         </p>
                         <br />
@@ -59,9 +61,9 @@ const Card = ({ project_id, icon, project_name, submission_date, score, descript
                 </div>
                 {/* <div className="border-b opacity-50"></div> */}
             </div>
-            <div className="px-10 xtra_large:px-56">
+            {/* <div className="px-10 xtra_large:px-56">
                 <div className="border-b border-b-white/30"></div>
-            </div>
+            </div> */}
         </div>
     )
 }

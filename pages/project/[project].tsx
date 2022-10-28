@@ -9,25 +9,25 @@ const Project = ({ project_name, score, student_ids, description }) => {
     return (
         <div className="">
             <div className="text-white bg-pronhub flex px-14 py-14 space-x-10">
-                <div id="image_project_preview" className="max-w-[500px] min-w-[500px]">
-                    <Image alt="" className=" disable_img_drag disable_selection" src={default_img} />
+                <div id="image_project_preview" className="max-w-[500px] min-w-[500px] flex items-center justify-center">
+                    <img alt="" className="rounded-xl disable_img_drag disable_selection" src={"https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Sin_foto.svg/450px-Sin_foto.svg.png?20060902150340"} />
                 </div>
                 <div className="space-y-2 flex flex-col justify-center">
                     <p className="text-5xl font-bold">{project}</p>
                     <div>
                         <p className="project_name">27/10/2022</p>
-                        <div className="flex space-x-1">
+                        <div className="font-semibold flex space-x-1">
                             <p>By </p>
                             {stdid.map((ids: any) =>
-                                <div key={ids.id} className="cursor-pointer">
+                                <div className="cursor-pointer">
                                     <Link href={'/profile/' + ids.id}>
                                         <p>{ids.id === stdid.at(-1).id ? ids.name : ids.name + ','}</p>
                                     </Link>
                                 </div>
                             )}
                         </div>
-                        <p className="project_name">Department of Computer Science, Web Development and Security</p>
-                        <p className="project_name">Score: {skor}</p>
+                        <p className="department">Department of Computer Science, Web Development and Security</p>
+                        <p className="score font-semibold">Score: {skor}</p>
                     </div>
                     <br />
                     <p className="description">
@@ -79,7 +79,7 @@ const Project = ({ project_name, score, student_ids, description }) => {
                             </div>
                         </div>
                     </div>
-                    <p className="text-white/30 text-center">Tip: You can press each person&apos;s names and view their profiles</p>
+                    <p className="text-white/30 text-center">Tip: You can press each person's names and view their profiles</p>
                 </div>
             </div>
         </div>

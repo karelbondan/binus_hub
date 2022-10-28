@@ -7,11 +7,11 @@ import default_profile from '../public/images/default_profile.jpg';
 const Navbar = () => {
     const router = useRouter();
     return (
-        <div className="flex sticky top-0 z-50 bg-pronhub_navbar text-white px-5 py-8 lg:px-10 items-center justify-center disable_selection">
+        <div className="flex sticky top-0 z-50 bg-pronhub_navbar text-white px-5 py-5 lg:px-10 items-center justify-center disable_selection">
             <div className='flex justify-content items-center xtra_large:space-x-[600px] large:space-x-[330px] bruh:space-x-[500px] medium:space-x-[300px] small:space-x-[200px] kinda_small:space-x-[100px]'>
                 <div id='tooltip_trigger' className='relative flex justify-center'>
-                    <Link href='/'>
-                        <button title='' className='max-w-[150px] min-w-[150px] '>
+                    <Link href='/' className=''>
+                        <button title='' className='flex max-w-[130px] min-w-[130px] '>
                             <Image className='disable_img_drag' src={bh_logo} alt="" />
                         </button>
                     </Link>
@@ -58,7 +58,7 @@ const Navbar = () => {
                             <button className='flex items-center justify-center space-x-2 border-l px-5'>
                                 <p>BOKUNONAWA</p>
                                 <div className='rounded-full w-[35px] h-[35px]'>
-                                    <Image alt='' src={default_profile} className='rounded-full' />
+                                    <img alt='' src={'https://i0.wp.com/researchictafrica.net/wp/wp-content/uploads/2016/10/default-profile-pic.jpg?ssl=1'} className='rounded-full' />
                                 </div>
                             </button>
                         </Link>
@@ -69,7 +69,7 @@ const Navbar = () => {
                 </div>
                 <div className='large:hidden very_small:flex'>
                     <button className='hover:text-yellow-500 transition-colors'>
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-10 h-10">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-8 h-8">
                             <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
                         </svg>
                     </button>
