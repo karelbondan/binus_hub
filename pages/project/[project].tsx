@@ -19,7 +19,7 @@ const Project = ({ project_name, score, student_ids, description }) => {
                         <div className="font-semibold flex space-x-1">
                             <p>By </p>
                             {stdid.map((ids: any) =>
-                                <div className="cursor-pointer">
+                                <div key={ids.id} className="cursor-pointer">
                                     <Link href={'/profile/' + ids.id}>
                                         <p>{ids.id === stdid.at(-1).id ? ids.name : ids.name + ','}</p>
                                     </Link>
@@ -79,7 +79,7 @@ const Project = ({ project_name, score, student_ids, description }) => {
                             </div>
                         </div>
                     </div>
-                    <p className="text-white/30 text-center">Tip: You can press each person's names and view their profiles</p>
+                    <p className="text-white/30 text-center">Tip: You can press each person&apos;s names and view their profiles</p>
                 </div>
             </div>
         </div>
