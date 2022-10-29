@@ -53,7 +53,6 @@ const Navbar = () => {
                         </div>
                     </div>
                     <div id='tooltip_trigger' className='relative flex justify-center'>
-
                         <Link href={'/profile/' + '2440069696'}>
                             <button className='flex items-center justify-center space-x-2 border-l px-5'>
                                 <p>BOKUNONAWA</p>
@@ -66,6 +65,12 @@ const Navbar = () => {
                             Profile
                         </div>
                     </div>
+                    <Link href={'/login'}>
+                        <div className='flex flex-col items-center justify-center cursor-pointer'>
+                            <p>Login</p>
+                            <p className='text-[8px]'>(Will be removed later)</p>
+                        </div>
+                    </Link>
                 </div>
                 <div className='large:hidden very_small:flex'>
                     <button className='hover:text-yellow-500 transition-colors'>

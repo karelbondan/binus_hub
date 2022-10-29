@@ -11,8 +11,9 @@ module.exports = {
         'pronhub_light': '#3d3d3d',
         'pronhub_navbar': '#292929',
         'pronhub_yellow': '#FE9801',
-        'binusmaya': '#0097DA',
-        'gray_kinda_light': '#282828',
+        'pronhub_blue' : '#0097da',
+        'pronhub_white' : '#f2f2f2',
+        'binusmaya': '#0097DA'
       },
       screens: {
         'very_small': '20px',

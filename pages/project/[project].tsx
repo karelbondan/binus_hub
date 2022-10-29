@@ -1,13 +1,16 @@
 import default_img from "../../public/images/default_icon.jpg";
 import Image from "next/image";
 import Link from "next/link";
+import Navbar from "../../components/navbar";
+import Footer from "../../components/footer";
 
 const Project = ({ project_name, score, student_ids, description }) => {
     let project = "Project Name";
     let skor = 97;
     let stdid = [{ name: 'John', id: 1 }, { name: 'Andersen', id: 2 }, { name: 'Alex', id: 3 }, { name: 'Robert', id: 4 }, { name: 'Despacito', id: 5 }];
     return (
-        <div className="">
+        <div>
+            <Navbar />
             <div className="text-white bg-pronhub flex px-14 py-14 space-x-10">
                 <div id="image_project_preview" className="max-w-[500px] min-w-[500px] flex items-center justify-center">
                     <img alt="" className="rounded-xl disable_img_drag disable_selection" src={"https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Sin_foto.svg/450px-Sin_foto.svg.png?20060902150340"} />
@@ -82,6 +85,7 @@ const Project = ({ project_name, score, student_ids, description }) => {
                     <p className="text-white/30 text-center">Tip: You can press each person&apos;s names and view their profiles</p>
                 </div>
             </div>
+            <Footer />
         </div>
     )
 }
