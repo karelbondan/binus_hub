@@ -24,14 +24,6 @@
   background-size: cover;
 }
 
-.divider{
-  background-image: url('wave_divider_index.svg');
-}
-
-.divider_flipped{
-  background-image: url('../public/images/wave_divider_index_flipped.svg');
-}
-
 .disable_img_drag {
   pointer-events: none
 }
