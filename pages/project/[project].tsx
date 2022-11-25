@@ -9,14 +9,13 @@ const Project = ({ project_name, score, student_ids, description }) => {
     let skor = 97;
     let stdid = [{ name: 'John', id: 1 }, { name: 'Andersen', id: 2 }, { name: 'Alex', id: 3 }, { name: 'Robert', id: 4 }, { name: 'Despacito', id: 5 }];
     return (
-        <div>
-            <Navbar />
-            <div className="text-white bg-pronhub flex px-14 py-14 space-x-10">
-                <div id="image_project_preview" className="max-w-[500px] min-w-[500px] flex items-center justify-center">
+        <div className="very_small:text-sm large:text-base">
+            <div className="text-white bg-pronhub min-h-[100vh] py-14 very_small:px-14 flex very_small:space-y-10 very_small:flex-col medium:flex-row medium:space-y-0 medium:space-x-10 xtra_large:px-44">
+                <div id="image_project_preview" className="flex items-center justify-center medium:max-w-[200px] medium:min-w-[200px] large:max-w-[300px] large:min-w-[300px]">
                     <img alt="" className="rounded-xl disable_img_drag disable_selection" src={"https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Sin_foto.svg/450px-Sin_foto.svg.png?20060902150340"} />
                 </div>
                 <div className="space-y-2 flex flex-col justify-center">
-                    <p className="text-5xl font-bold">{project}</p>
+                    <p className="font-bold very_small:text-4xl large:text-5xl">{project}</p>
                     <div>
                         <p className="project_name">27/10/2022</p>
                         <div className="font-semibold flex space-x-1">
@@ -85,7 +84,6 @@ const Project = ({ project_name, score, student_ids, description }) => {
                     <p className="text-white/30 text-center">Tip: You can press each person&apos;s names and view their profiles</p>
                 </div>
             </div>
-            <Footer />
         </div>
     )
 }

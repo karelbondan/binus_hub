@@ -8,10 +8,9 @@ import WaveDivider from '../public/images/wave_divider_index.svg';
 
 const Profile = () => {
     return (
-        <div>
-            <Navbar />
-            <div className="px-10 py-10 text-white bg-pronhub min-h-[100vh] flex flex-col items-center justify-center space-y-6">
-                <div className="min-w-[500px] max-w-[500px] flex items-center justify-center">
+        <div className="very_small:text-sm large:text-base">
+            <div className="py-10 text-white bg-pronhub min-h-[100vh] flex flex-col items-center justify-center space-y-6 very_small:px-3 large:px-10">
+                <div className="flex items-center justify-center large:min-w-[500px] large:max-w-[500px]">
                     <img alt="" src={'https://i0.wp.com/researchictafrica.net/wp/wp-content/uploads/2016/10/default-profile-pic.jpg?ssl=1'} className="rounded-full" />
                 </div>
                 <div className="flex flex-col items-center justify-center">
@@ -47,7 +46,6 @@ const Profile = () => {
                     <Card key={2} project_id={2} icon="" project_name={"Project Name"} submission_date={"10/19/2022"} description={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed convallis lacus eu dolor semper, et mattis nibh lobortis. Morbi ac nisi mi. Curabitur dapibus enim eget feugiat cursus.'} score={"82"} download_link="https://www.google.com" viewer={5} student_ids={[1, 249, 2, 5]} />
                 </div>
             </div>
-            <Footer />
         </div>
     )
 }

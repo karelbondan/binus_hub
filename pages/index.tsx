@@ -7,21 +7,19 @@ import Footer from "../components/footer";
 
 export default function Home() {
   return (
-    <div>
-      <Navbar />
+    <div className="very_small:text-sm medium:text-base">
       <div className='bg-pronhub text-white min-h-[100vh]'>
-        <div className="h-[500px] flex items-center justify-center space-x-7 px-3">
-          <p className="text-[150px]">👋</p>
+        <div className="h-[500px] px-8 items-center justify-center flex very_small:space-y-16 very_small:flex-col large:space-x-7 large:space-y-0 large:flex-row">
+          <p className="very_small:text-[70px] medium:text-[90px] large:text-[150px]">👋</p>
           <div className="">
-            <p className="font-pacifico text-5xl">Welcome to Binusian Hub!</p>
+            <p className="font-pacifico very_small:text-4xl large:text-5xl">Welcome to Binusian Hub!</p>
             <br />
             <p className="max-w-2xl">Hello! Welcome to Binusian Hub. This is a portfolio website dedicated to showcase projects made by BINUS students over the years. You can start by scrolling the newest uploaded projects below or by searching anything you want, either by project name, student names, etc.</p>
           </div>
         </div>
-        {/* <div className="spacer divider"></div> */}
         <WaveDivider className='' />
         <div className="flex items-center justify-center bg-pronhub_navbar">
-          <p className="pt-5 pb-5 font-pacifico text-5xl">Projects</p>
+          <p className="pt-5 pb-5 font-pacifico very_small:text-4xl large:text-5xl">Projects</p>
         </div>
         <div className="pt-5 pb-5 small:px-16 medium:px-40 large:px-60 xtra_large:px-96 bg-pronhub_navbar">
           <form className='flex space-x-4 py-1 rounded-xl' autoComplete='none' >
@@ -34,7 +32,7 @@ export default function Home() {
             </button>
           </form>
         </div>
-        <div className="pb-[50px] bg-pronhub_navbar space-y-3 flex flex-col justify-center items-center">
+        <div className="pb-[50px] bg-pronhub_navbar space-y-3 flex flex-col justify-center items-center very_small:px-3 large:px-0">
           <Card key={1} project_id={1} icon="" project_name={"Project Name"} submission_date={"10/19/2022"} description={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed convallis lacus eu dolor semper, et mattis nibh lobortis. Morbi ac nisi mi. Curabitur dapibus enim eget feugiat cursus.'} score={"92"} download_link="https://www.google.com" viewer={5} student_ids={[1, 2, 3, 4, 5]} />
           <Card key={2} project_id={2} icon="" project_name={"Project Name"} submission_date={"10/19/2022"} description={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed convallis lacus eu dolor semper, et mattis nibh lobortis. Morbi ac nisi mi. Curabitur dapibus enim eget feugiat cursus.'} score={"82"} download_link="https://www.google.com" viewer={5} student_ids={[1, 249, 2, 5]} />
           <Card key={3} project_id={3} icon="" project_name={"Project Name"} submission_date={"10/19/2022"} description={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed convallis lacus eu dolor semper, et mattis nibh lobortis. Morbi ac nisi mi. Curabitur dapibus enim eget feugiat cursus.'} score={"88"} download_link="https://www.google.com" viewer={5} student_ids={[1, 902, 222, 3421]} />
@@ -43,7 +41,6 @@ export default function Home() {
           <Card key={6} project_id={6} icon="" project_name={"Project Name"} submission_date={"10/19/2022"} description={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed convallis lacus eu dolor semper, et mattis nibh lobortis. Morbi ac nisi mi. Curabitur dapibus enim eget feugiat cursus.'} score={"88"} download_link="https://www.google.com" viewer={5} student_ids={[1, 902, 222, 3421]} />
         </div>
       </div>
-      <Footer />
     </div>
   )
 }

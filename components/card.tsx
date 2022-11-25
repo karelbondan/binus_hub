@@ -14,7 +14,7 @@ const Card = ({ project_id, icon, project_name, submission_date, score, descript
                 {/* <div className="flex space-x-10 items-center xtra_large:px-[300px]"> */}
                 <div className="flex space-x-10 items-center w-fit px-7">
                     <Link href={'/project/' + project_id}>
-                        <div id="image" className="max-w-[160px] min-w-[160px] cursor-pointer">
+                        <div id="image" className="cursor-pointer very_small:max-w-[120px] very_small:min-w-[120px] large:max-w-[160px] large:min-w-[160px]">
                             <img alt="" className="disable_img_drag rounded-xl" src={"https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Sin_foto.svg/450px-Sin_foto.svg.png?20060902150340"} />
                         </div>
                     </Link>
@@ -22,7 +22,7 @@ const Card = ({ project_id, icon, project_name, submission_date, score, descript
                         {/* <p className={`text-2xl ${binus_staff && staff_ids.includes(binus_staff) ? "" : "hidden"}`}>{project_name} - 📝{score}</p>
                         <p className={`text-2xl ${!binus_staff || !staff_ids.includes(binus_staff) ? "" : "hidden"}`}>{project_name}</p> */}
                         <Link href={'/project/' + project_id}>
-                            <p className='cursor-pointer text-3xl font-semibold'>{project_name}</p>
+                            <p className='cursor-pointer font-semibold very_small:text-2xl large:text-3xl'>{project_name}</p>
                         </Link>
                         <p className="text-sm">By {student_ids.toString()}</p>
                         <p className={`text-sm font-semibold ${binus_staff && staff_ids.includes(binus_staff) ? "" : "hidden"}`}>Score: {score}</p>
