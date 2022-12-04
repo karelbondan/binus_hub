@@ -124,13 +124,13 @@ const Upload = () => {
                                 <div>
                                     <div className={`text-white/[.45] text-center space-y-5 ${pic ? "hidden" : "flex-none"}`}>
                                         <div className="space-y-1">
-                                            <p className="font-bold">Drag your project's cover image here</p>
+                                            <p className="font-bold">Drag your project&apos;s cover image here</p>
                                             <p className="">or</p>
                                             <button className="border border-white/[.4] px-2 py-1 rounded-md hover:bg-binusmaya hover:border-binusmaya hover:text-black transition-all" onClick={uploadIMG}>
                                                 Upload cover
                                             </button>
                                         </div>
-                                        <p className="text-sm">Make sure the image's ratio is 4:3 and 2 MB at maximum</p>
+                                        <p className="text-sm">Make sure the image&apos;s ratio is 4:3 and 2 MB at maximum</p>
                                     </div>
                                     <div className={`${pic ? "flex-none" : "hidden"} relative`}>
                                         <Image className="rounded-lg" alt="Project cover image" width='421' height='568' src={pic ? pic : bh_logo} />
