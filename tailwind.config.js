@@ -18,7 +18,7 @@ module.exports = {
       screens: {
         'very_small': '20px',
         'kinda_small': '200px',
-        'small': '240px',
+        'small': '410px',
         'medium': '720px',
         'almost_large': '960px',
         'bruh': '1023px',

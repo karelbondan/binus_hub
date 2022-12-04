@@ -102,9 +102,6 @@
   opacity: 0;
   transform: scale(0.95) translate(0px, -5.5px);
   transition: 0.13s;
-  /* animation-name: bounce_down;
-  animation-duration: 0.13s;
-  animation-fill-mode: forwards; */
 }
 
 #tooltip_trigger:hover #tooltip_download{
@@ -112,9 +109,6 @@
   opacity: 1;
   transform: scale(1) translate(0px, 0px);
   transition: 0.13s;
-  /* animation-name: bounce_up;
-  animation-duration: 0.13s;
-  animation-fill-mode: forwards; */
 }
 
 #tooltip_download:before{
@@ -123,7 +117,39 @@
   height: 0px;
   border-top: 7px solid transparent;
   border-left: 7px solid transparent;
-  border-bottom: 7px solid #0097DA ;
+  border-bottom: 7px solid #0097DA;
+  border-right: 7px solid transparent;
+  position: absolute;
+  top: -14px;
+  text-align: center;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#tooltip_red{
+  pointer-events: none;
+  visibility: hidden;
+  opacity: 0;
+  transform: scale(0.95) translate(0px, -5.5px);
+  transition: 0.13s;
+}
+
+#tooltip_trigger:hover #tooltip_red{
+  visibility: visible;
+  opacity: 1;
+  transform: scale(1) translate(0px, 0px);
+  transition: 0.13s;
+}
+
+#tooltip_red:before{
+  content: ' ';
+  width: 0px;
+  height: 0px;
+  border-top: 7px solid transparent;
+  border-left: 7px solid transparent;
+  border-bottom: 7px solid #EF4444;
   border-right: 7px solid transparent;
   position: absolute;
   top: -14px;

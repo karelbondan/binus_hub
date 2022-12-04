@@ -21,7 +21,7 @@ const Navbar = () => {
     return (
         <div className='sticky top-0 z-30 very_small:text-sm medium:text-base'>
             <div className="relative flex bg-pronhub_navbar text-white px-5 py-5 lg:px-10 items-center justify-center disable_selection">
-                <div className='flex justify-content items-center xtra_large:space-x-[600px] large:space-x-[330px] medium:space-x-[300px] small:space-x-[200px] kinda_small:space-x-[100px]'>
+                <div className='flex justify-content items-center kinda_small:space-x-[150px] small:space-x-[200px] medium:space-x-[300px] large:space-x-[330px] xtra_large:space-x-[600px]'>
                     <div id='tooltip_trigger' className='relative flex justify-center'>
                         <Link href='/' className=''>
                             <button title='' className='flex max-w-[130px] min-w-[130px]' onClick={e => { handleSwitchPage(e, '/') }} >
@@ -137,9 +137,6 @@ const Navbar = () => {
                             <p>Login</p>
                         </button>
                     </Link>
-                </div>
-                <div className='fixed bottom-3 text-center w-full'>
-                    <p className='very_small:text-xs medium:text-sm text-white/[.5] px-5'>I spent way too much time developing this piece alkajsSLKskdjSKj pls gib $5</p>
                 </div>
             </div>
         </div>
